@@ -1,17 +1,47 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class HelloWorld : MonoBehaviour  // Inherit from MonoBehaviour
+public class HelloWorld : MonoBehaviour
 {
-    // Called when the script is first run
+    // Start is called before the first frame update
     void Start()
     {
-        // Display a message in the console
-        print("Hello, World!");
+        //destroying the game object
+        GameObject.CreatePrimitive
+(PrimitiveType.
+Cube).transform.position =
+new Vector3(0, 0, 0);
+
+GameObject.CreatePrimitive
+(PrimitiveType.
+Cube).transform.position =
+new Vector3(-0.5f, 1, 0);
+
+GameObject.CreatePrimitive
+(PrimitiveType.
+Cube).transform.position =
+new Vector3(0.5f, 1, 0);
+
+GameObject.CreatePrimitive
+(PrimitiveType.
+Cube).transform.position =
+new Vector3(0.5f, 2, 0);
+
+GameObject.CreatePrimitive
+(PrimitiveType.
+Cube).transform.position =
+new Vector3(-0.5f, 2, 0);
+
+GameObject.CreatePrimitive
+(PrimitiveType.
+Cube).transform.position =
+new Vector3(0, 3, 0);
     }
 
-    // Called every frame
+    // Update is called once per frame
     void Update()
     {
-        // Optional: Do something every frame
+        print("Hello,World");
     }
 }
